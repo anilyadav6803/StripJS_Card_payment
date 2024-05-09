@@ -1,5 +1,10 @@
 const express = require("express");
 const app = express();
+var cors = require('cors')
+
+
+
+app.use(cors())
 const { resolve } = require("path");
 // Replace if using a different env file or config
 const env = require("dotenv").config({ path: "./.env" });
